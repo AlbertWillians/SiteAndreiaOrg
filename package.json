@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-with-css-grid",
+  "name": "portfolio-andreia-organizer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,10 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevin-powell/portfolio-with-css-grid.git"
+    "url": "git+https://github.com/AlbertWillians/SiteAndreiaOrg"
   },
-  "author": "Kevin Powell",
-  "license": "MIT",
+  "author": "Albert Willians",
   "bugs": {
     "url": "https://github.com/kevin-powell/portfolio-with-css-grid/issues"
   },
