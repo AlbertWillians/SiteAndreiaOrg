@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-with-css-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin-powell/portfolio-with-css-grid.git"
+  },
+  "author": "Kevin Powell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevin-powell/portfolio-with-css-grid/issues"
+  },
+  "homepage": "https://github.com/kevin-powell/portfolio-with-css-grid#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  }
+}

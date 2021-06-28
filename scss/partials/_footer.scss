@@ -1,0 +1,87 @@
+footer {
+   background-color: $dark-blue;
+   padding: 5em 0;
+   text-align: center;
+
+   @include mq(60em) {
+      display: flex;
+      padding: 2em 3em;
+      align-items: center;
+
+      p {
+         margin: 0;
+      }
+   }
+}
+
+.social-icons {
+   @include container($max-width: 15em);
+   display: flex;
+   justify-content: space-between;
+   margin: 1.75em auto 4em;
+
+   @include mq(60em) {
+      margin: 0 auto 0 2em;
+      padding-right: 4em;
+      border-right: 1px solid rgba($white, .2);
+   }
+}
+
+.social-icon {
+   width: 25%;
+   height: 25%;
+
+   &:hover {
+      opacity: .8;
+   }
+}
+
+.copyright {
+
+   @include mq(60em) {
+      margin: 0;
+   }
+   &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      background: rgba($white, .2);
+      margin: 4em auto;
+      width: 25%;
+
+      @include mq(60em) {
+         display: none;
+      }
+   } 
+}
+
+/* Tooltip container */
+.tooltip {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ /* Tooltip text */
+ .tooltip .tooltiptext {
+   visibility: hidden;
+   width: 110px;
+   background-color: white;
+   border: 1px solid $gray;
+   color: black;
+   text-align: center;
+   padding: 5px 0;
+   border-radius: 6px;
+  
+   /* Position the tooltip text - see examples below! */
+   position: absolute;
+   bottom: 110%;
+   left: 50%;
+   margin-left: -55px;   
+   z-index: 1;
+ }
+ 
+ /* Show the tooltip text when you mouse over the tooltip container */
+ .tooltip:hover .tooltiptext {
+   visibility: visible;
+   transition: visibility ease-in-out 250ms;
+ }
