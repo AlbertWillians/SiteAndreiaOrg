@@ -1,3 +1,25 @@
-body {
-  background: red;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(180, 219, 187);
+  height: 20vh;
+  padding: 25px;
+}
+
+header .social-icons {
+  display: flex;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons img {
+  width: 25px;
+}
+
+header img {
+  max-height: 100%;
 }
