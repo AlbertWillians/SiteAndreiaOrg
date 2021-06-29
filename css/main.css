@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -306,7 +306,7 @@ template {
 
 body {
   color: #999999;
-  font-family: "Merriweather", serif;
+  font-family: "Archivo", sans-serif;
   line-height: 1.6;
   background: white;
   font-size: .875rem;
@@ -337,10 +337,56 @@ h2 {
   text-transform: uppercase;
   line-height: 1;
   font-weight: 400;
-  font-family: "Six Caps", sans-serif; }
+  font-family: "Roboto", sans-serif; }
   @media (min-width: 50em) {
     h2 {
       font-size: 3rem; } }
+
+header {
+  letter-spacing: .3rem;
+  background: #b4dbbb;
+  color: #012b47;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  height: 100vh;
+  gap: 50px;
+  font-weight: 700; }
+  header span {
+    font-size: 1.5rem;
+    display: block; }
+  header .contact-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; }
+  @media (min-width: 50em) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 30vh; }
+      header .logo {
+        min-width: 25vw;
+        max-width: 30vw; } }
+  header .logo {
+    width: 300px;
+    height: 300px; }
+  header .social-icons {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 15em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; }
+  header .social-icon {
+    width: 40px;
+    height: 40px; }
+    header .social-icon:hover {
+      opacity: .8; }
 
 .menu-button {
   z-index: 20;
@@ -373,13 +419,13 @@ nav ul {
   height: 100vh;
   justify-content: space-evenly;
   align-items: stretch;
-  background: #03afc2; }
+  background: #e8e9eb; }
 
 nav li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: calc(100vh / 6);
   text-align: center; }
   nav li:not(:last-of-type) {
     border-bottom: 1px solid #223843; }
@@ -387,13 +433,13 @@ nav li {
     background: #03a6b8; }
 
 nav a {
-  font-size: 4em;
+  font-size: 2.5em;
   letter-spacing: 0.15em;
   color: #223843;
   text-transform: uppercase;
   line-height: 1;
   font-weight: 400;
-  font-family: "Six Caps", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   line-height: 0;
   padding: 12.3vh 0;
@@ -420,7 +466,7 @@ nav a {
   display: block; }
 
 .welcome {
-  background-image: url(../img/header-bg.png);
+  background-image: url(../img/home/home.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -428,6 +474,9 @@ nav a {
   align-items: center;
   justify-content: center;
   position: relative; }
+  @media (min-width: 50em) {
+    .welcome {
+      height: 60vh; } }
   .welcome h1 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -444,7 +493,7 @@ nav a {
       text-transform: uppercase;
       line-height: 1;
       font-weight: 400;
-      font-family: "Six Caps", sans-serif;
+      font-family: "Roboto", sans-serif;
       display: block; }
       @media (min-width: 50em) {
         .welcome h1 span {
@@ -572,22 +621,23 @@ nav a {
     position: absolute;
     top: 100%;
     bottom: 0;
-    right: 0;
+    right: 100%;
     left: 0;
     padding: 1.5em;
-    background: rgba(3, 175, 194, 0.75);
+    background: rgba(0, 0, 0, 0.35);
     color: #fff;
     text-align: left;
     display: flex;
     flex-direction: column;
-    transition: top ease-in-out 250ms; }
+    transition: all ease-in-out 250ms; }
   .portfolio-item:hover figcaption,
   .portfolio-item:focus figcaption {
-    top: 0; }
+    top: 0;
+    right: 0; }
 
 .portfolio-title {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-bottom: auto; }
 
 .portfolio-desc {
@@ -595,7 +645,7 @@ nav a {
 
 .portfolio-link {
   color: #fff;
-  font-weight: 900;
+  font-weight: 700;
   font-size: .9rem;
   text-decoration: none;
   border-bottom: 2px solid #fff;
@@ -622,7 +672,7 @@ nav a {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2; }
   .featured .portfolio-title {
-    font-size: 4rem; }
+    font-size: 2rem; }
   .featured .portfolio-desc {
     display: block; }
   .featured .portfolio-link {
@@ -669,7 +719,7 @@ nav a {
   margin: 2em 0; }
 
 .header-one {
-  background-image: url(../img/portfolio-01.jpg); }
+  background-image: url(../img/cozinha/cozinha_01.jpg); }
 
 .header-two {
   background-image: url(../img/portfolio-02.jpg); }
@@ -684,12 +734,12 @@ nav a {
   background-image: url(../img/portfolio-05.jpg); }
 
 .portfolio-title-box {
-  background: rgba(3, 175, 194, 0.75);
+  background: rgba(0, 0, 0, 0.35);
   padding: 3em 0 3em 3em;
   color: white;
   width: 70%; }
   .portfolio-title-box .portfolio-title {
-    font-size: 3.5em;
+    font-size: 1.5em;
     display: inline-block; }
     .portfolio-title-box .portfolio-title::after {
       content: '';
@@ -703,17 +753,14 @@ nav a {
   font-size: 1.1rem; }
 
 .portfolio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: black;
   text-align: left;
   width: 85%;
   margin: 0 auto;
   padding-bottom: 2em; }
-
-.portfolio-full-width {
-  width: 100vw;
-  max-width: initial;
-  margin: 2em calc(50% - 50vw);
-  height: 25vh;
-  object-fit: cover; }
 
 @media (min-width: 50em) {
   .portfolio-pull-left {
@@ -794,7 +841,7 @@ textarea {
   text-transform: uppercase;
   line-height: 1;
   font-weight: 400;
-  font-family: "Six Caps", sans-serif; }
+  font-family: "Roboto", sans-serif; }
   .button:hover {
     cursor: pointer;
     background: #039dae; }
