@@ -1,5 +1,5 @@
 .welcome {
-   background-image: url(../img/header-bg.png);
+   background-image: url(../img/home/home.png);
    background-size: cover;
    background-position: center;
    display: flex;
@@ -7,6 +7,10 @@
    align-items: center;
    justify-content: center;
    position: relative;
+
+   @include mq {
+      height: 60vh;
+   }
 
    h1 {
       font-size: 1.5rem;

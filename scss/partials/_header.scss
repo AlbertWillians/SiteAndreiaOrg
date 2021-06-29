@@ -1,0 +1,59 @@
+header {
+   letter-spacing: .3rem;
+   background: $light-green;
+   color: rgb(01, 43, 71);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px;
+   text-align: center;
+   height: 100vh;
+   gap: 50px;
+   font-weight: $fw-b;
+
+   span {
+      font-size: 1.5rem;
+      display: block;
+   }
+
+   .contact-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+   }
+
+   @include mq {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 30vh;
+
+      .logo {
+         min-width: 25vw;
+         max-width: 30vw;
+      }
+   }
+
+   .logo {
+      width: 300px;
+      height: 300px;
+   }
+
+   .social-icons {
+      @include container($max-width: 15em);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+   }
+   
+   .social-icon {
+      width: 40px;
+      height: 40px;
+   
+      &:hover {
+         opacity: .8;
+      }
+   }
+}

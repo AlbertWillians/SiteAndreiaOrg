@@ -24,26 +24,27 @@
       position: absolute;
       top: 100%;
       bottom: 0;
-      right: 0;
+      right: 100%;
       left: 0;
       padding: 1.5em;
-      background: rgba($accent, .75);
+      background: rgba($black, .35);
       color: $white;
       text-align: left;
       display: flex;
       flex-direction: column;
-      transition: top ease-in-out 250ms;
+      transition: all ease-in-out 250ms;
    }
 
    &:hover figcaption,
    &:focus figcaption {
       top: 0;
+      right: 0;
    }
 }
 
 .portfolio-title {
    color: $white;
-   font-size: 2rem;
+   font-size: 1rem;
    margin-bottom: auto;
 }
 
@@ -91,7 +92,7 @@
 
    .featured {
       .portfolio-title {
-         font-size: 4rem;
+         font-size: 2rem;
       }
 
       .portfolio-desc {
@@ -153,7 +154,7 @@
 }
 
 .header-one {
-   background-image: url(../img/portfolio-01.jpg);
+   background-image: url(../img/cozinha/cozinha_01.jpg);
 }
 
 .header-two {
@@ -173,13 +174,13 @@
 }
 
 .portfolio-title-box {
-   background: rgba($accent, .75);
+   background: rgba($black, .35);
    padding: 3em 0 3em 3em;
    color: white;
    width: 70%;
 
    .portfolio-title {
-      font-size: 3.5em;
+      font-size: 1.5em;
       display: inline-block;
 
       &::after {
@@ -198,18 +199,14 @@
 }
 
 .portfolio-content {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   color: $black;
    text-align: left;
    width: 85%;
    margin: 0 auto;
    padding-bottom: 2em;
-}
-
-.portfolio-full-width {
-   width: 100vw;
-   max-width: initial;
-   margin: 2em calc(50% - 50vw);
-   height: 25vh;
-   object-fit: cover;
 }
 
 @include mq {

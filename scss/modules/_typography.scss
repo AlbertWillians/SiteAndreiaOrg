@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
-$ff-s: 'Merriweather', serif;
-$ff-ss: 'Six Caps', sans-serif;
 
+$ff-r: 'Roboto', sans-serif;
+$ff-a: 'Archivo', sans-serif;
+
+
+$fw-l: 400;
 $fw-n: 400;
-$fw-b: 900;
+$fw-b: 700;
 
 @mixin sans-serif($fs, $ls: .15em, $color: $gray, $tt: uppercase, $lh: 1) {
    font-size: $fs;
@@ -13,5 +16,5 @@ $fw-b: 900;
    text-transform: $tt;
    line-height: $lh;
    font-weight: $fw-n;
-   font-family: $ff-ss;
+   font-family: $ff-r;
 }

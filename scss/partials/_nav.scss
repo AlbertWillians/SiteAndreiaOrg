@@ -33,14 +33,14 @@ nav ul {
    height: 100vh;
    justify-content: space-evenly;
    align-items: stretch;
-   background: $accent;
+   background: $light-gray;
 }
 
 nav li {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 25vh;
+   height: calc(100vh / 6);
    text-align: center;
 
    &:not(:last-of-type) {
@@ -53,7 +53,7 @@ nav li {
 }
 
 nav a {
-   @include sans-serif($fs: 4em, $color: $dark-blue);
+   @include sans-serif($fs: 2.5em, $color: $dark-blue);
    text-decoration: none;
    line-height: 0;
    padding: 12.3vh 0;
