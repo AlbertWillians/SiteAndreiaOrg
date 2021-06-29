@@ -3,42 +3,511 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Andreia Organizer</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header>
-    <img src="./img//home/logo.jpg" alt="">
-    <img src="./img//home/perfil_01.png" alt="">
-    <div class="contact-info">
-      <span>Fale com a Déia</span>
-      <span>(19) 98143-2030</span>
-      <div class="social-icons">7
-        <a href="#">
-          <img src="./img/instagram.svg" alt="">
-        </a>
-        <a href="#">
-          <img src="./img/instagram.svg" alt="">
-        </a>
-        <a href="#">
-          <img src="./img/instagram.svg" alt="">
-        </a>
-      </div>
-    </div>
-  </header>
+
   <nav>
     <ul>
-      <li>HOME</li>
-      <li>SOBRE</li>
-      <li>SERVIÇOS</li>
-      <li>PORTFÓLIO</li>
-      <li>DICAS</li>
-      <li>ORÇAMENTO</li>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">sobre</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#contact">contato</a></li>
     </ul>
   </nav>
+
+  <div id="home" class="welcome">
+
+    <button class="menu-button">
+      <svg class="hamburger" viewBox="0 0 100 52" width="35" height="25">
+        <rect width=" 120" height="10"></rect>
+        <rect y="25" width="120" height="10"></rect>
+        <rect y="50" width=" 120" height="10"></rect>
+      </svg>
+
+      <svg class="close-icon" viewBox="0 0 100 52" width="35" height="25">
+        <line x1="2" y1="58" x2="98" y2="2" stroke-width="10" stroke="black" />
+        <line x1="2" y1="2" x2="98" y2="58" stroke-width="10" stroke="black" />
+      </svg>
+    </button>
+
+    <h1>Welcome to my<span>Portfolio</span></h1>
+  </div>
+
+  <section class="intro">
+    <div class="intro-left">
+      <img src="img/welcome-01.png" alt="A laptop on a wood table">
+    </div>
+    <div class="intro-middle">
+      <h2>Making it happen</h2>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua"</p>
+    </div>
+    <div class="intro-right">
+      <img src="img/welcome-02.png" alt="Two computers and a laptop on a table">
+    </div>
+  </section>
+
+  <section id="about" class="about-me">
+    <img class="about-img" src="img/joe-portfolio.png" alt="A picture of Joe Portfolio">
+    <h1 class="about-title">Albert Portfolio</h1>
+    <h2 class="about-subtitle">FrontEnd Developer</h2>
+    <div class="about-text">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident."</p>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident."</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h1>Meu Trabalho </h1>
+    <div class="portfolio-items">
+
+      <!-- Portfolio Item 1 -->
+      <figure class="portfolio-item featured">
+        <img src="img/portfolio-01.jpg" alt="portfolio item">
+        <figcaption>
+          <h2 class="portfolio-title">Nome do Projeto</h2>
+          <p class="portfolio-desc">Uma curta descrição vai aqui</p>
+          <a href="#" class="portfolio-link">Saiba Mais</a>
+        </figcaption>
+
+        <!-- Portfolio Modal 1 -->
+        <div class="portfolio-modal">
+
+          <button class="modal-close">
+            <svg viewBox="0 0 100 52" width="30" height="20">
+              <line x1="2" y1="58" x2="98" y2="2" stroke-width="10" stroke="black" />
+              <line x1="2" y1="2" x2="98" y2="58" stroke-width="10" stroke="black" />
+            </svg>
+          </button>
+
+          <div class="portfolio-header header-one">
+            <div class="portfolio-title-box">
+              <h2 class="portfolio-title">Nome do Projeto</h2>
+              <p class="portfolio-subtitle">Descrição vai Aqui</p>
+            </div>
+          </div>
+          <!-- /portfolio-header -->
+          <div class="portfolio-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-full-width" src="img/portfolio-01.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-left" src="img/portfolio-01.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-right" src="img/portfolio-01.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- /modal -->
+      </figure>
+
+      <!-- Portfolio Item 2 -->
+      <figure class="portfolio-item">
+        <img src="img/portfolio-02.jpg" alt="portfolio item">
+        <figcaption class="small">
+          <h2 class="portfolio-title">Nome do Projeto</h2>
+          <p class="portfolio-desc">Uma curta descrição vai aqui</p>
+          <a href="#" class="portfolio-link">Saiba Mais</a>
+        </figcaption>
+        <!-- Portfolio Modal 2 -->
+        <div class="portfolio-modal">
+
+          <button class="modal-close">
+            <svg viewBox="0 0 100 52" width="30" height="20">
+              <line x1="2" y1="58" x2="98" y2="2" stroke-width="10" stroke="black" />
+              <line x1="2" y1="2" x2="98" y2="58" stroke-width="10" stroke="black" />
+            </svg>
+          </button>
+
+          <div class="portfolio-header header-two">
+            <div class="portfolio-title-box">
+              <h2 class="portfolio-title">Nome do Projeto 2</h2>
+              <p class="portfolio-subtitle">Descrição vai Aqui</p>
+            </div>
+          </div>
+          <!-- /portfolio-header -->
+          <div class="portfolio-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-full-width" src="img/portfolio-02.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-left" src="img/portfolio-02.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-right" src="img/portfolio-02.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- /modal -->
+      </figure>
+
+      <!-- Portfolio Item 3 -->
+      <figure class="portfolio-item">
+        <img src="img/portfolio-03.jpg" alt="portfolio item">
+        <figcaption>
+          <h2 class="portfolio-title">Nome do Projeto</h2>
+          <p class="portfolio-desc">Uma curta descrição vai aqui</p>
+          <a href="#" class="portfolio-link">Saiba Mais</a>
+        </figcaption>
+
+        <!-- Portfolio Modal 3 -->
+        <div class="portfolio-modal">
+
+          <button class="modal-close">
+            <svg viewBox="0 0 100 52" width="30" height="20">
+              <line x1="2" y1="58" x2="98" y2="2" stroke-width="10" stroke="black" />
+              <line x1="2" y1="2" x2="98" y2="58" stroke-width="10" stroke="black" />
+            </svg>
+          </button>
+
+          <div class="portfolio-header header-three">
+            <div class="portfolio-title-box">
+              <h2 class="portfolio-title">Nome do Projeto</h2>
+              <p class="portfolio-subtitle">Descrição vai Aqui</p>
+            </div>
+          </div>
+          <!-- /portfolio-header -->
+          <div class="portfolio-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-full-width" src="img/portfolio-03.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-left" src="img/portfolio-03.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-right" src="img/portfolio-03.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- /modal -->
+      </figure>
+
+      <!-- Portfolio Item 4 -->
+      <figure class="portfolio-item">
+        <img src="img/portfolio-04.jpg" alt="portfolio item">
+        <figcaption>
+          <h2 class="portfolio-title">Nome do Projeto</h2>
+          <p class="portfolio-desc">Uma curta descrição vai aqui</p>
+          <a href="#" class="portfolio-link">Saiba Mais</a>
+        </figcaption>
+
+        <!-- Portfolio Modal 1 -->
+        <div class="portfolio-modal">
+
+          <button class="modal-close">
+            <svg viewBox="0 0 100 52" width="30" height="20">
+              <line x1="2" y1="58" x2="98" y2="2" stroke-width="10" stroke="black" />
+              <line x1="2" y1="2" x2="98" y2="58" stroke-width="10" stroke="black" />
+            </svg>
+          </button>
+
+          <div class="portfolio-header header-four">
+            <div class="portfolio-title-box">
+              <h2 class="portfolio-title">Nome do Projeto</h2>
+              <p class="portfolio-subtitle">Descrição vai Aqui</p>
+            </div>
+          </div>
+          <!-- /portfolio-header -->
+          <div class="portfolio-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-full-width" src="img/portfolio-04.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-left" src="img/portfolio-04.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-right" src="img/portfolio-04.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- /modal -->
+      </figure>
+
+      <!-- Portfolio Item 5 -->
+      <figure class="portfolio-item">
+        <img src="img/portfolio-05.jpg" alt="portfolio item">
+        <figcaption>
+          <h2 class="portfolio-title">Nome do Projeto</h2>
+          <p class="portfolio-desc">Uma curta descrição vai aqui</p>
+          <a href="#" class="portfolio-link">Saiba Mais</a>
+        </figcaption>
+
+        <!-- Portfolio Modal 1 -->
+        <div class="portfolio-modal">
+
+          <button class="modal-close">
+            <svg viewBox="0 0 100 52" width="30" height="20">
+              <line x1="2" y1="58" x2="98" y2="2" stroke-width="10" stroke="black" />
+              <line x1="2" y1="2" x2="98" y2="58" stroke-width="10" stroke="black" />
+            </svg>
+          </button>
+
+          <div class="portfolio-header header-five">
+            <div class="portfolio-title-box">
+              <h2 class="portfolio-title">Nome do Projeto</h2>
+              <p class="portfolio-subtitle">Descrição vai Aqui</p>
+            </div>
+          </div>
+          <!-- /portfolio-header -->
+          <div class="portfolio-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-full-width" src="img/portfolio-05.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-left" src="img/portfolio-05.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <img class="portfolio-pull-right" src="img/portfolio-05.jpg" alt="an image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- /modal -->
+      </figure>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h1>Fale Comigo</h1>
+    <form action="">
+
+      <label class="name">Nome:
+        <input type="text" id="name">
+      </label>
+
+      <label class="email">E-mail:
+        <input type="email" id="email">
+      </label>
+
+      <label class="message" message="message">Mensagem:
+        <textarea name="" id="message"></textarea>
+      </label>
+
+      <input class="button form-button" type="submit" value="ENVIAR">
+
+    </form>
+  </section>
+
+  <footer>
+    <p>Siga-me nas redes sociais</p>
+
+    <div class="social-icons">
+      <a class="social-icon tooltip" href="https://www.linkedin.com/in/albertwillians/">
+        <span class="tooltiptext">Linkedin</span>
+        <img src="img/linkedin.png" alt="linkedin">
+      </a>
+      <a class="social-icon tooltip" href="https://www.instagram.com/albertwillians/">
+        <span class="tooltiptext">Instagram</span>
+        <img src="img/instagram.svg" alt="instagram">
+      </a>
+      <a class="social-icon tooltip" href="https://github.com/AlbertWillians">
+        <span class="tooltiptext">GitHub</span>
+        <img src="img/github.svg" alt="github">
+      </a>
+    </div>
+
+    <p class="copyright">Copyright 2021 Albert Willians</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/modal.js"></script>
+
 </body>
 
 </html>
