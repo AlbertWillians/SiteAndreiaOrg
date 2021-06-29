@@ -11,46 +11,55 @@
 
 <body>
 
+  <header id="home">
+    <img class="logo" src="./img/home/logo.png" alt="">
+    <div class="contact-info">
+      <div>
+        <span>Fale com a Déia</span>
+        <span>(19) 98143-2030</span>
+      </div>
+      <div class="social-icons">
+        <a href="#">
+          <img class="social-icon" src="./img/twitter.svg" alt="Twitter">
+        </a>
+        <a href="#">
+          <img class="social-icon" src="./img/github.svg" alt="Github">
+        </a>
+        <a href="#">
+          <img class="social-icon" src="./img/instagram.svg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </header>
+
   <nav>
     <ul>
       <li><a href="#home">home</a></li>
       <li><a href="#about">sobre</a></li>
-      <li><a href="#portfolio">portfolio</a></li>
-      <li><a href="#contact">contato</a></li>
+      <li><a href="#work">serviços</a></li>
+      <li><a href="#portfolio">portfólio</a></li>
+      <li><a href="#tips">dicas</a></li>
+      <li><a href="#contact">orçamento</a></li>
     </ul>
   </nav>
 
-  <div id="home" class="welcome">
+  <div class="welcome">
 
     <button class="menu-button">
       <svg class="hamburger" viewBox="0 0 100 52" width="35" height="25">
-        <rect width=" 120" height="10"></rect>
-        <rect y="25" width="120" height="10"></rect>
-        <rect y="50" width=" 120" height="10"></rect>
+        <rect width=" 120" height="10" fill="rgb(01, 43, 71)"></rect>
+        <rect y="25" width="120" height="10" fill="rgb(01, 43, 71)"></rect>
+        <rect y="50" width=" 120" height="10" fill="rgb(01, 43, 71)"></rect>
       </svg>
 
       <svg class="close-icon" viewBox="0 0 100 52" width="35" height="25">
-        <line x1="2" y1="58" x2="98" y2="2" stroke-width="10" stroke="black" />
-        <line x1="2" y1="2" x2="98" y2="58" stroke-width="10" stroke="black" />
+        <line x1="2" y1="58" x2="98" y2="2" stroke-width="10" stroke="rgb(01, 43, 71)" />
+        <line x1="2" y1="2" x2="98" y2="58" stroke-width="10" stroke="rgb(01, 43, 71)" />
       </svg>
     </button>
 
-    <h1>Welcome to my<span>Portfolio</span></h1>
+    <!-- <h1>Welcome to my<span>Portfolio</span></h1> -->
   </div>
-
-  <section class="intro">
-    <div class="intro-left">
-      <img src="img/welcome-01.png" alt="A laptop on a wood table">
-    </div>
-    <div class="intro-middle">
-      <h2>Making it happen</h2>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua"</p>
-    </div>
-    <div class="intro-right">
-      <img src="img/welcome-02.png" alt="Two computers and a laptop on a table">
-    </div>
-  </section>
 
   <section id="about" class="about-me">
     <img class="about-img" src="img/joe-portfolio.png" alt="A picture of Joe Portfolio">
@@ -73,16 +82,16 @@
   </section>
 
   <section id="portfolio" class="portfolio">
-    <h1>Meu Trabalho </h1>
+    <h1>Portfolio</h1>
     <div class="portfolio-items">
 
       <!-- Portfolio Item 1 -->
       <figure class="portfolio-item featured">
-        <img src="img/portfolio-01.jpg" alt="portfolio item">
+        <img src="img/cozinha/cozinha_01.jpg" alt="portfolio item">
         <figcaption>
-          <h2 class="portfolio-title">Nome do Projeto</h2>
-          <p class="portfolio-desc">Uma curta descrição vai aqui</p>
-          <a href="#" class="portfolio-link">Saiba Mais</a>
+          <h2 class="portfolio-title">Cozinha</h2>
+          <p class="portfolio-desc">Trabalhos de organização em cozinhas</p>
+          <a href="#" class="portfolio-link">Mais</a>
         </figcaption>
 
         <!-- Portfolio Modal 1 -->
@@ -97,7 +106,7 @@
 
           <div class="portfolio-header header-one">
             <div class="portfolio-title-box">
-              <h2 class="portfolio-title">Nome do Projeto</h2>
+              <h2 class="portfolio-title">Cozinha</h2>
               <p class="portfolio-subtitle">Descrição vai Aqui</p>
             </div>
           </div>
@@ -109,45 +118,30 @@
               commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
               occaecat cupidatat non proident.</p>
-            <img class="portfolio-full-width" src="img/portfolio-01.jpg" alt="an image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident.</p>
-            <img class="portfolio-pull-left" src="img/portfolio-01.jpg" alt="an image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident.</p>
-            <img class="portfolio-pull-right" src="img/portfolio-01.jpg" alt="an image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident.</p>
+            <img src="img/cozinha/cozinha_02.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_03.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_04.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_05.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_06.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_07.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_08.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_09.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_10.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_11.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_12.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_13.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_14.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_15.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_16.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_17.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_18.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_19.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_20.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_21.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_22.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_23.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_24.jpg" alt="an image">
+            <img src="img/cozinha/cozinha_25.jpg" alt="an image">
           </div>
         </div>
         <!-- /modal -->
@@ -157,9 +151,9 @@
       <figure class="portfolio-item">
         <img src="img/portfolio-02.jpg" alt="portfolio item">
         <figcaption class="small">
-          <h2 class="portfolio-title">Nome do Projeto</h2>
-          <p class="portfolio-desc">Uma curta descrição vai aqui</p>
-          <a href="#" class="portfolio-link">Saiba Mais</a>
+          <h2 class="portfolio-title">Banheiro</h2>
+          <p class="portfolio-desc">Trabalhos de organização em banheiros</p>
+          <a href="#" class="portfolio-link">Mais</a>
         </figcaption>
         <!-- Portfolio Modal 2 -->
         <div class="portfolio-modal">
@@ -235,7 +229,7 @@
         <figcaption>
           <h2 class="portfolio-title">Nome do Projeto</h2>
           <p class="portfolio-desc">Uma curta descrição vai aqui</p>
-          <a href="#" class="portfolio-link">Saiba Mais</a>
+          <a href="#" class="portfolio-link">Mais</a>
         </figcaption>
 
         <!-- Portfolio Modal 3 -->
@@ -312,10 +306,10 @@
         <figcaption>
           <h2 class="portfolio-title">Nome do Projeto</h2>
           <p class="portfolio-desc">Uma curta descrição vai aqui</p>
-          <a href="#" class="portfolio-link">Saiba Mais</a>
+          <a href="#" class="portfolio-link">Mais</a>
         </figcaption>
 
-        <!-- Portfolio Modal 1 -->
+        <!-- Portfolio Modal 4 -->
         <div class="portfolio-modal">
 
           <button class="modal-close">
@@ -389,10 +383,10 @@
         <figcaption>
           <h2 class="portfolio-title">Nome do Projeto</h2>
           <p class="portfolio-desc">Uma curta descrição vai aqui</p>
-          <a href="#" class="portfolio-link">Saiba Mais</a>
+          <a href="#" class="portfolio-link">Mais</a>
         </figcaption>
 
-        <!-- Portfolio Modal 1 -->
+        <!-- Portfolio Modal 5 -->
         <div class="portfolio-modal">
 
           <button class="modal-close">
