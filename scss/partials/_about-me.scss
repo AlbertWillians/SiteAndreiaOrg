@@ -15,11 +15,15 @@
 }
 
 .about-title {
+   color: $light-green;
+   text-shadow: 2px 2px #000;
+   font-size: 2rem;
    margin-bottom: .25em;
    margin-top: .25em;
 }
 
 .about-subtitle {
+   font-size: 1.5rem;
    margin: .5em 0;
 }
 

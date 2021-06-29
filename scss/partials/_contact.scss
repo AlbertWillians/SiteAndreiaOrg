@@ -62,16 +62,18 @@ textarea {
 
 .button {
    display: inline-block;
+   border-radius: 8px;
+   box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);
    width: auto;
    margin-top: .5em;
-   margin-left: auto;
+   // margin-left: auto;
    padding: .35em 1.5em;
-   background: $accent;
+   background: $dark-green;
    border: none;
    @include sans-serif($fs: 2.5rem, $color:white);
 
    &:hover {
       cursor: pointer;
-      background: darken($accent, 4%);
+      background: lighten($dark-green, 4%);
    }
 }

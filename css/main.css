@@ -304,6 +304,9 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   color: #999999;
   font-family: "Archivo", sans-serif;
@@ -323,9 +326,10 @@ h1, h2, p {
   margin-bottom: 1em; }
 
 h1 {
-  color: #03afc2;
+  color: #012b47;
   line-height: 1;
-  font-size: 3rem; }
+  font-size: 3rem;
+  letter-spacing: .3rem; }
   @media (min-width: 50em) {
     h1 {
       font-size: 4.25rem; } }
@@ -358,7 +362,6 @@ header {
     font-size: 1.5rem;
     display: block; }
   header .contact-info {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -466,17 +469,13 @@ nav a {
   display: block; }
 
 .welcome {
-  background-image: url(../img/home/home.png);
+  background-image: url(../img/home/perfil_02.png);
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 100vh;
   align-items: center;
   justify-content: center;
   position: relative; }
-  @media (min-width: 50em) {
-    .welcome {
-      height: 60vh; } }
   .welcome h1 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -526,11 +525,11 @@ nav a {
   @supports (display: grid) {
     .intro {
       display: grid;
-      grid-template-columns: minmax(5em, 1fr) minmax(auto, 30em) minmax(5em, 1fr); } }
+      grid-template-columns: minmax(5em, 1fr) minmax(auto, 20em) minmax(5em, 1fr); } }
 
 .intro-middle {
-  background: #223843;
-  padding: 2.5em 4vw;
+  background: black;
+  padding: 1em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -561,10 +560,14 @@ nav a {
       margin-right: 1em; } }
 
 .about-title {
+  color: #b4dbbb;
+  text-shadow: 2px 2px #000;
+  font-size: 2rem;
   margin-bottom: .25em;
   margin-top: .25em; }
 
 .about-subtitle {
+  font-size: 1.5rem;
   margin: .5em 0; }
 
 @supports (display: grid) {
@@ -722,10 +725,10 @@ nav a {
   background-image: url(../img/cozinha/cozinha_01.jpg); }
 
 .header-two {
-  background-image: url(../img/portfolio-02.jpg); }
+  background-image: url(../img/banheiro/banheiro_01.jpg); }
 
 .header-three {
-  background-image: url(../img/portfolio-03.jpg); }
+  background-image: url(../img/closet/closet_01.jpg); }
 
 .header-four {
   background-image: url(../img/portfolio-04.jpg); }
@@ -829,11 +832,12 @@ textarea {
 
 .button {
   display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
   width: auto;
   margin-top: .5em;
-  margin-left: auto;
   padding: .35em 1.5em;
-  background: #03afc2;
+  background: #012b47;
   border: none;
   font-size: 2.5rem;
   letter-spacing: 0.15em;
@@ -844,12 +848,13 @@ textarea {
   font-family: "Roboto", sans-serif; }
   .button:hover {
     cursor: pointer;
-    background: #039dae; }
+    background: #01375b; }
 
 footer {
-  background-color: #223843;
+  background-color: #b4dbbb;
   padding: 5em 0;
-  text-align: center; }
+  text-align: center;
+  color: #012b47; }
   @media (min-width: 60em) {
     footer {
       display: flex;
@@ -885,7 +890,7 @@ footer {
   content: '';
   display: block;
   height: 1px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(1, 43, 71, 0.2);
   margin: 4em auto;
   width: 25%; }
   @media (min-width: 60em) {

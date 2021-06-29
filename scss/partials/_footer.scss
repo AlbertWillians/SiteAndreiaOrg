@@ -1,7 +1,8 @@
 footer {
-   background-color: $dark-blue;
+   background-color: $light-green;
    padding: 5em 0;
    text-align: center;
+   color: $dark-green;
 
    @include mq(60em) {
       display: flex;
@@ -45,7 +46,7 @@ footer {
       content: '';
       display: block;
       height: 1px;
-      background: rgba($white, .2);
+      background: rgba($dark-green, .2);
       margin: 4em auto;
       width: 25%;
 

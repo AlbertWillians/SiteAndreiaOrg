@@ -19,13 +19,13 @@
 
    @supports (display: grid) {
       display: grid;
-      grid-template-columns: minmax(5em, 1fr) minmax(auto, 30em) minmax(5em, 1fr);
+      grid-template-columns: minmax(5em, 1fr) minmax(auto, 20em) minmax(5em, 1fr);
    }
 }
 
 .intro-middle {
-   background: $dark-blue;
-   padding: 2.5em 4vw;
+   background: $black;
+   padding: 1em;
    text-align: center;
    display: flex;
    flex-direction: column;

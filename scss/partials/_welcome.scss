@@ -1,15 +1,15 @@
 .welcome {
-   background-image: url(../img/home/home.png);
+   background-image: url(../img/home/perfil_02.png);
    background-size: cover;
    background-position: center;
    display: flex;
-   height: 100vh;
+   // height: 50vh;
    align-items: center;
    justify-content: center;
    position: relative;
 
    @include mq {
-      height: 60vh;
+      // height: 60vh;
    }
 
    h1 {
