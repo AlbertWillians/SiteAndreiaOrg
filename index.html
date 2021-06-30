@@ -460,22 +460,23 @@
 
   <section id="contact" class="contact">
     <h1>Fale Comigo</h1>
-    <form action="">
+    <form id="my-form" action="https://formspree.io/f/xvodqqed" method="POST">
 
       <label class="name">Nome:
-        <input type="text" id="name">
+        <input type="text" id="name" name="Nome">
       </label>
 
       <label class="email">E-mail:
-        <input type="email" id="email">
+        <input type="email" id="email" name="E-mail">
       </label>
 
       <label class="message" message="message">Mensagem:
-        <textarea name="" id="message"></textarea>
+        <textarea id="message" name="Mensagem"></textarea>
       </label>
 
       <input class="button form-button" type="submit" value="ENVIAR">
 
+      <div id="status" class=""></div>
     </form>
   </section>
 
@@ -497,11 +498,12 @@
       </a>
     </div>
 
-    <p class="copyright">Copyright 2021 Albert Willians</p>
+    <p class="copyright">Copyright 2021 Andreia Salustiano</p>
   </footer>
 
   <script src="js/nav.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/form.js"></script>
 
 </body>
 

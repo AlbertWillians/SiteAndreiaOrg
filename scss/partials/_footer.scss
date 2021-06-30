@@ -4,7 +4,7 @@ footer {
    text-align: center;
    color: $dark-green;
 
-   @include mq(60em) {
+   @include mq {
       display: flex;
       padding: 2em 3em;
       align-items: center;
@@ -21,7 +21,7 @@ footer {
    justify-content: space-between;
    margin: 1.75em auto 4em;
 
-   @include mq(60em) {
+   @include mq {
       margin: 0 auto 0 2em;
       padding-right: 4em;
       border-right: 1px solid rgba($white, .2);
@@ -39,7 +39,7 @@ footer {
 
 .copyright {
 
-   @include mq(60em) {
+   @include mq {
       margin: 0;
    }
    &::before {
@@ -50,7 +50,7 @@ footer {
       margin: 4em auto;
       width: 25%;
 
-      @include mq(60em) {
+      @include mq {
          display: none;
       }
    } 

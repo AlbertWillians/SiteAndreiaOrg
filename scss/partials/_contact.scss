@@ -63,17 +63,57 @@ textarea {
 .button {
    display: inline-block;
    border-radius: 8px;
-   box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);
    width: auto;
    margin-top: .5em;
-   // margin-left: auto;
    padding: .35em 1.5em;
    background: $dark-green;
    border: none;
    @include sans-serif($fs: 2.5rem, $color:white);
+   transition: all ease-out 200ms;
 
    &:hover {
       cursor: pointer;
       background: lighten($dark-green, 4%);
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, .5);
+
+   }
+}
+
+#status {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 60%;
+   max-width: 500px;
+   text-align: center;
+   padding: 10px;
+   margin: 0 auto;
+   border-radius: 8px;
+   font-size: 1rem;
+   color: #fff;
+}
+
+#status.success {
+   background-color: green;
+   animation: status 4s ease forwards;
+}
+
+#status.error {
+   background-color: red;
+   animation: status 4s ease forwards;
+}
+
+@keyframes status {
+   0%{
+      opacity: 1;
+      pointer-events: all;
+   }
+   90%{
+      opacity: 1;
+      pointer-events: all;
+   }
+   100%{
+      opacity: 0;
+      pointer-events: none;
    }
 }
