@@ -16,29 +16,43 @@
    flex: 1 1 20rem;
    margin: 0;
 
+   &.featured {
+      .portfolio-title {
+         font-size: 2.2rem;
+      }
+
+      .portfolio-link {
+         font-size: 1.2rem;
+      }
+
+      .portfolio-desc {
+         font-size: 1.05rem;
+      }
+   }
+
    img {
       display: block;
    }
 
    figcaption {
       position: absolute;
-      top: 100%;
+      top: 0;
       bottom: 0;
-      right: 100%;
+      right: 0;
       left: 0;
-      padding: 1.5em;
+      opacity: 0;
+      padding: 1em;
       background: rgba($black, .35);
       color: $white;
       text-align: left;
       display: flex;
       flex-direction: column;
-      transition: all ease-in-out 250ms;
+      transition: opacity ease-in 250ms;
    }
 
    &:hover figcaption,
    &:focus figcaption {
-      top: 0;
-      right: 0;
+      opacity: 1;
    }
 }
 
@@ -46,16 +60,18 @@
    color: $white;
    font-size: 1rem;
    margin-bottom: auto;
+   letter-spacing: .1rem;
 }
 
 .portfolio-desc {
    display: none;
+   font-size: .9rem;
 }
 
 .portfolio-link {
    color: $white;
    font-weight: $fw-b;
-   font-size: .9rem;
+   font-size: 1rem;
    text-decoration: none;
    border-bottom: 2px solid $white;
    align-self: flex-start;
@@ -166,11 +182,19 @@
 }
 
 .header-four {
-   background-image: url(../img/portfolio-04.jpg);
+   background-image: url(../img/infantil/infantil_01.jpg);
 }
 
 .header-five {
-   background-image: url(../img/portfolio-05.jpg);
+   background-image: url(../img/lavanderia/lavanderia_01.jpg);
+}
+
+.header-six {
+   background-image: url(../img/documentos/documentos_01.jpg);
+}
+
+.header-seven {
+   background-image: url(../img/mudanca/mudanca_01.jpg);
 }
 
 .portfolio-title-box {

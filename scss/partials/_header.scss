@@ -1,5 +1,5 @@
 header {
-   letter-spacing: .3rem;
+   letter-spacing: .2rem;
    background: $light-green;
    color: rgb(01, 43, 71);
    display: flex;
@@ -10,6 +10,7 @@ header {
    height: 100vh;
    gap: 50px;
    font-weight: $fw-b;
+   overflow: hidden;
 
    span {
       font-size: 1.5rem;
@@ -42,7 +43,9 @@ header {
    .social-icons {
       @include container($max-width: 15em);
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 35px;
+      padding: 0;
       align-items: center;
       margin: 0;
    }
@@ -50,6 +53,9 @@ header {
    .social-icon {
       width: 40px;
       height: 40px;
+      font-size: 1.1rem;
+      letter-spacing: 0;
+      font-weight: $fw-l;
    
       &:hover {
          opacity: .8;

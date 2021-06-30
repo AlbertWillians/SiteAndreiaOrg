@@ -64,8 +64,9 @@ footer {
  
  /* Tooltip text */
  .tooltip .tooltiptext {
+   font-size: 1rem;
    visibility: hidden;
-   width: 110px;
+   width: 120px;
    background-color: white;
    border: 1px solid $gray;
    color: black;
@@ -75,9 +76,9 @@ footer {
   
    /* Position the tooltip text - see examples below! */
    position: absolute;
-   bottom: 110%;
+   bottom: 120%;
    left: 50%;
-   margin-left: -55px;   
+   margin-left: -60px;   
    z-index: 1;
  }
  
