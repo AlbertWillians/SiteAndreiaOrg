@@ -59,7 +59,9 @@ nav ul {
       background: none;
       justify-content: center;
       align-items: center;
-      gap: 1.5em;
+      gap: 5vw;
+      border-top: 3px solid $dark-green;
+      box-sizing: content-box;
    }
 }
 
@@ -74,7 +76,7 @@ nav li {
       border-bottom: 1px solid $dark-blue;
    }
 
-   &:hover {
+   &:hover { 
       background: darken($light-gray, 2%);
    }
 
@@ -104,9 +106,10 @@ nav a {
       height: 80px;
       padding: 40px 0;
       letter-spacing: 0;
+      transition: opacity ease-out 200ms;
 
       &:hover {
-         opacity: .7;
+         opacity: .6;
       }
    }
 }

@@ -68,14 +68,13 @@ textarea {
    padding: .35em 1.5em;
    background: $dark-green;
    border: none;
-   @include sans-serif($fs: 2.5rem, $color:white);
+   @include sans-serif($fs: 2rem, $color:white);
    transition: all ease-out 200ms;
 
    &:hover {
       cursor: pointer;
       background: lighten($dark-green, 4%);
-      box-shadow: 0 0 10px 5px rgba(0, 0, 0, .5);
-
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, .7);
    }
 }
 

@@ -24,5 +24,8 @@
   },
   "resolutions": {
     "graceful-fs": "^4.2.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2"
   }
 }

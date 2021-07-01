@@ -76,6 +76,11 @@
    border-bottom: 2px solid $white;
    align-self: flex-start;
 
+   &:hover {
+      color: $white;
+      opacity: .7;
+   }
+
    .featured & {
       font-size: 1.1rem;
    }
@@ -231,6 +236,12 @@
    width: 85%;
    margin: 0 auto;
    padding-bottom: 2em;
+
+   @include mq {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+   }
 }
 
 @include mq {

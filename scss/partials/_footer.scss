@@ -24,11 +24,10 @@ footer {
    @include mq {
       margin: 0 auto 0 2em;
       padding-right: 4em;
-      border-right: 1px solid rgba($white, .2);
    }
 }
 
-.social-icon {
+.social-icon { 
    width: 25%;
    height: 25%;
 

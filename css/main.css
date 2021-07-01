@@ -325,6 +325,9 @@ h1, h2, p {
   margin-top: 0;
   margin-bottom: 1em; }
 
+a:hover {
+  color: initial; }
+
 h1 {
   color: #012b47;
   line-height: 1;
@@ -332,7 +335,7 @@ h1 {
   letter-spacing: .3rem; }
   @media (min-width: 55em) {
     h1 {
-      font-size: 4.25rem; } }
+      font-size: 3.5rem; } }
 
 h2 {
   font-size: 2rem;
@@ -366,7 +369,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: center; }
+    align-items: center;
+    padding: 0 3vw; }
   @media (min-width: 55em) {
     header {
       flex-direction: row;
@@ -452,7 +456,9 @@ nav ul {
       background: none;
       justify-content: center;
       align-items: center;
-      gap: 1.5em; } }
+      gap: 5vw;
+      border-top: 3px solid #012b47;
+      box-sizing: content-box; } }
 
 nav li {
   display: flex;
@@ -490,9 +496,10 @@ nav a {
       font-size: 1.5em;
       height: 80px;
       padding: 40px 0;
-      letter-spacing: 0; }
+      letter-spacing: 0;
+      transition: opacity ease-out 200ms; }
       nav a:hover {
-        opacity: .7; } }
+        opacity: .6; } }
 
 .close-icon {
   display: none; }
@@ -707,6 +714,9 @@ nav a {
   text-decoration: none;
   border-bottom: 2px solid #fff;
   align-self: flex-start; }
+  .portfolio-link:hover {
+    color: #fff;
+    opacity: .7; }
   .featured .portfolio-link {
     font-size: 1.1rem; }
   .portfolio-link::after {
@@ -824,6 +834,11 @@ nav a {
   width: 85%;
   margin: 0 auto;
   padding-bottom: 2em; }
+  @media (min-width: 55em) {
+    .portfolio-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px; } }
 
 @media (min-width: 55em) {
   .portfolio-pull-left {
@@ -898,7 +913,7 @@ textarea {
   padding: .35em 1.5em;
   background: #012b47;
   border: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 0.15em;
   color: white;
   text-transform: uppercase;
@@ -909,7 +924,7 @@ textarea {
   .button:hover {
     cursor: pointer;
     background: #01375b;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7); }
 
 #status {
   display: flex;
@@ -966,8 +981,7 @@ footer {
   @media (min-width: 55em) {
     .social-icons {
       margin: 0 auto 0 2em;
-      padding-right: 4em;
-      border-right: 1px solid rgba(255, 255, 255, 0.2); } }
+      padding-right: 4em; } }
 
 .social-icon {
   width: 25%;

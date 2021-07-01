@@ -24,6 +24,10 @@ h1, h2, p {
    margin-bottom: 1em;
 }
 
+a:hover {
+   color: initial;
+}
+
 h1 {
    color: $dark-green;
    line-height: 1;
@@ -31,7 +35,7 @@ h1 {
    letter-spacing: .3rem;
 
    @include mq {
-      font-size: 4.25rem;
+      font-size: 3.5rem;
    }
 }
 
