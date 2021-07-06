@@ -1,0 +1,32 @@
+#modal-1,
+#modal-2,
+#modal-3,
+#modal-4,
+#modal-5,
+#modal-6,
+#modal-7 {
+   display: none;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+   width: 100%;
+   overflow: hidden;
+
+   @include mq {
+      display: flex;
+   }
+
+   img {
+      object-fit: cover;
+   }
+}    
+
+.not-carousel {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+
+   @include mq {
+      display: none;
+   }
+}

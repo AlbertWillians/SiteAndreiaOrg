@@ -1,14 +1,14 @@
 header {
    letter-spacing: .2rem;
    background: $light-green;
-   color: rgb(01, 43, 71);
+   color: $dark-green;
    display: flex;
    flex-direction: column;
+   justify-content: space-evenly;
    align-items: center;
    padding: 30px;
    text-align: center;
    height: 100vh;
-   gap: 50px;
    font-weight: $fw-b;
    overflow: hidden;
 
@@ -18,8 +18,11 @@ header {
    }
 
    .contact-info {
+      width: 350px;
+      height: 180px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 15px;
       align-items: center;
       padding: 0 3vw;
@@ -37,8 +40,11 @@ header {
    }
 
    .logo {
-      width: 300px;
-      height: 300px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 350px;
+      height: 180px;
    }
 
    .social-icons {

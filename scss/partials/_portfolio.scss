@@ -236,12 +236,6 @@
    width: 85%;
    margin: 0 auto;
    padding-bottom: 2em;
-
-   @include mq {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-   }
 }
 
 @include mq {

@@ -30,6 +30,8 @@ footer {
 .social-icon { 
    width: 25%;
    height: 25%;
+   opacity: 1;
+   z-index: inherit;
 
    &:hover {
       opacity: .8;
