@@ -19,17 +19,25 @@
 
    @supports (display: grid) {
       display: grid;
-      grid-template-columns: minmax(5em, 1fr) minmax(auto, 20em) minmax(5em, 1fr);
+      grid-template-columns: minmax(5em, 1fr) minmax(auto, 22em) minmax(5em, 1fr);
+
+      @include mq {
+         grid-template-columns: minmax(5em, 1fr) minmax(5em, 1fr) minmax(5em, 1fr);
+      }
    }
 }
 
 .intro-middle {
    background: $black;
    padding: 1em;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   // text-align: center;
+   // display: flex;
+   // flex-direction: column;
+   // justify-content: center;
+
+   img {
+      object-fit: cover;
+   }
 }
 
 .intro-left img,

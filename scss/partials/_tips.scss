@@ -9,7 +9,21 @@
    background: $light-green;
 
    iframe {
-      max-width: 50em;
+      max-width: 65em;
       outline: none;
+   }
+}
+
+.lightwidget-widget-mobile {
+   @include mq {
+      display: none;
+   }
+}
+
+.lightwidget-widget-mq {
+   display: none;
+
+   @include mq {
+      display: block;
    }
 }

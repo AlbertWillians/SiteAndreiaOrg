@@ -6,7 +6,7 @@ footer {
 
    @include mq {
       display: flex;
-      padding: 2em 3em;
+      padding: 2em 5em;
       align-items: center;
 
       p {
@@ -34,7 +34,7 @@ footer {
    z-index: inherit;
 
    &:hover {
-      opacity: .8;
+      opacity: .9;
    }
 }
 
@@ -86,5 +86,4 @@ footer {
  /* Show the tooltip text when you mouse over the tooltip container */
  .tooltip:hover .tooltiptext {
    visibility: visible;
-   transition: visibility ease-in-out 250ms;
  }
