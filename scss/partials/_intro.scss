@@ -1,49 +1,9 @@
 .intro {
    display: flex;
-   color: rgba($white, .7);
-
-   h2 {
-      color: $white;
-      font-weight: $fw-n;
-      line-height: 1.4em;
-
-      &::after {
-         content: '';
-         width: 35%;
-         height: 1px;
-         background: rgba($white, .5);
-         display: block;
-         margin: 1em auto 0;
-      }
-   }
-
-   @supports (display: grid) {
-      display: grid;
-      grid-template-columns: minmax(5em, 1fr) minmax(auto, 22em) minmax(5em, 1fr);
-
-      @include mq {
-         grid-template-columns: minmax(5em, 1fr) minmax(5em, 1fr) minmax(5em, 1fr);
-      }
-   }
-}
-
-.intro-middle {
-   background: $black;
-   padding: 1em;
-   // text-align: center;
-   // display: flex;
-   // flex-direction: column;
-   // justify-content: center;
+   max-height: 100vh;
+   overflow-y: hidden;
 
    img {
       object-fit: cover;
    }
-}
-
-.intro-left img,
-.intro-right img {
-   object-fit: cover;
-   min-height: 100%;
-   min-width: 100%;
-   display: block;
 }

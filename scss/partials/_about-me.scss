@@ -3,15 +3,29 @@
    @include clearfix;
 
    padding: 5em 0;
+
+   .button {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 8px;
+      width: auto;
+      margin-top: .5em;
+      padding: .35em 1.5em;
+      background: $dark-green;
+      border: none;
+      @include sans-serif($fs: 2rem, $color:white);
+      transition: all ease-out 200ms;
+   
+      &:hover {
+         cursor: pointer;
+         background: lighten($dark-green, 4%);
+         box-shadow: 0 0 5px 2px rgba(0, 0, 0, .7);
+      }
+   }
 }
 
 .about-img {
    max-height: 25em;
-
-   @media (min-width: 42em) {
-      float: left;
-      margin-right: 1em;
-   }
 }
 
 .about-title {
@@ -20,6 +34,10 @@
    font-size: 2rem;
    margin-bottom: .25em;
    margin-top: .25em;
+
+   @include mq {
+      font-size: 3rem;
+   }
 }
 
 .about-subtitle {
@@ -38,10 +56,6 @@
    .about-img {
       grid-column: port / img;
       grid-row: 1 / 2;
-
-      @include mq {
-         grid-row: 1 / 4;
-      }
    }
 
    .about-title {
@@ -52,24 +66,10 @@
 
    .about-subtitle {
       text-align: center;
-
-      @include mq {
-         grid-row: 2 / 3;
-      }
-   }
-
-   .about-text {
-      @include mq {
-         grid-row: 3 / 4;
-      }
    }
 
    .about-subtitle,
    .about-text {
       grid-column: port / port;
-
-      @include mq {
-         grid-column: image-end / port-end;
-      }
    }
 }
