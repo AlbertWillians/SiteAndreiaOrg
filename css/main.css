@@ -308,7 +308,7 @@ template {
   box-sizing: border-box; }
 
 body {
-  color: #002a36;
+  color: #012A36;
   font-family: "Archivo", sans-serif;
   line-height: 1.6;
   background: white;
@@ -329,7 +329,7 @@ a:hover {
   color: initial; }
 
 h1 {
-  color: #002a36;
+  color: #012A36;
   line-height: 1;
   font-size: 3rem;
   letter-spacing: .3rem; }
@@ -351,8 +351,8 @@ h2 {
 
 header {
   letter-spacing: .2rem;
-  background: #b4dbbb;
-  color: #002a36;
+  background: #B4DBBB;
+  color: #012A36;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -438,7 +438,7 @@ nav {
       height: 80px;
       max-width: 100vw;
       margin: 0;
-      background: #b4dbbb;
+      background: #B4DBBB;
       position: sticky;
       transform: translateX(0);
       transition: none;
@@ -462,7 +462,7 @@ nav ul {
       justify-content: center;
       align-items: center;
       gap: 5vw;
-      border-top: 3px solid #002a36;
+      border-top: 3px solid #012A36;
       box-sizing: content-box; } }
 
 nav li {
@@ -588,8 +588,8 @@ nav a {
     border-radius: 8px;
     width: auto;
     margin-top: .5em;
-    padding: .35em 1.5em;
-    background: #002a36;
+    padding: .35em;
+    background: #012A36;
     border: none;
     font-size: 2rem;
     letter-spacing: 0.15em;
@@ -601,21 +601,22 @@ nav a {
     transition: all ease-out 200ms; }
     .about-me .button:hover {
       cursor: pointer;
-      background: #003a4a;
+      background: #013a4a;
       box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7); }
 
 .about-img {
   max-height: 25em; }
 
 .about-title {
-  color: #b4dbbb;
-  text-shadow: 2px 2px #0006;
+  color: #012A36;
+  font-weight: 700;
+  text-shadow: 3px 3px #fff6;
   font-size: 2rem;
   margin-bottom: .25em;
   margin-top: .25em; }
   @media (min-width: 55em) {
     .about-title {
-      font-size: 3rem; } }
+      font-size: 3.2rem; } }
 
 .about-subtitle {
   font-size: 1.5rem;
@@ -892,7 +893,7 @@ textarea {
   max-width: 100%;
   margin-top: .5em;
   padding: .35em 1.5em;
-  background: #002a36;
+  background: #012A36;
   border: none;
   font-size: 2rem;
   letter-spacing: 0.15em;
@@ -904,7 +905,7 @@ textarea {
   transition: all ease-out 200ms; }
   .button:hover {
     cursor: pointer;
-    background: #003a4a;
+    background: #013a4a;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7); }
 
 #status {
@@ -940,10 +941,10 @@ textarea {
     pointer-events: none; } }
 
 footer {
-  background-color: #b4dbbb;
+  background-color: #B4DBBB;
   padding: 5em 0;
   text-align: center;
-  color: #002a36; }
+  color: #012A36; }
   @media (min-width: 55em) {
     footer {
       display: flex;
@@ -980,7 +981,7 @@ footer {
   content: '';
   display: block;
   height: 1px;
-  background: rgba(0, 42, 54, 0.2);
+  background: rgba(1, 42, 54, 0.2);
   margin: 4em auto;
   width: 25%; }
   @media (min-width: 55em) {
@@ -1061,7 +1062,7 @@ footer {
   text-align: center;
   padding: 4em 1.2em;
   width: 100vw;
-  background: #b4dbbb; }
+  background: #B4DBBB; }
   .tips iframe {
     max-width: 65em;
     outline: none; }
@@ -1085,12 +1086,11 @@ footer {
   text-align: center;
   height: auto;
   max-width: 100vw;
-  background: #b4dbbb; }
-  .work .content {
+  background: #B4DBBB; }
+  .work .card {
+    width: 310px;
+    transform: translateX(-50%); }
+  .work .carousel-inner {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px; }
-    .work .content a:hover {
-      color: #fff; }
+    width: 80vw; }

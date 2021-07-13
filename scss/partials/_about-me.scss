@@ -10,7 +10,7 @@
       border-radius: 8px;
       width: auto;
       margin-top: .5em;
-      padding: .35em 1.5em;
+      padding: .35em;
       background: $dark-green;
       border: none;
       @include sans-serif($fs: 2rem, $color:white);
@@ -29,14 +29,15 @@
 }
 
 .about-title {
-   color: $light-green;
-   text-shadow: 2px 2px #0006;
+   color: $dark-green;
+   font-weight: $fw-b;
+   text-shadow: 3px 3px #fff6;
    font-size: 2rem;
    margin-bottom: .25em;
    margin-top: .25em;
 
    @include mq {
-      font-size: 3rem;
+      font-size: 3.2rem;
    }
 }
 
