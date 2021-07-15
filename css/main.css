@@ -359,7 +359,7 @@ header {
   align-items: center;
   padding: 30px;
   text-align: center;
-  height: 72vh;
+  height: 60vh;
   overflow: hidden; }
   header span {
     font-size: 1.5rem;
@@ -819,6 +819,7 @@ nav a {
   text-align: left;
   width: 85%;
   margin: 0 auto;
+  margin-top: 2em;
   padding-bottom: 2em; }
 
 @media (min-width: 55em) {
@@ -1094,3 +1095,15 @@ footer {
     display: flex;
     justify-content: center;
     width: 80vw; }
+  .work .carousel-control-prev {
+    opacity: 1; }
+    .work .carousel-control-prev:hover {
+      opacity: .8; }
+  .work .carousel-control-prev {
+    opacity: 1; }
+    .work .carousel-control-prev:hover {
+      opacity: .8; }
+  .work .carousel-control-next {
+    opacity: 1; }
+    .work .carousel-control-next:hover {
+      opacity: .8; }

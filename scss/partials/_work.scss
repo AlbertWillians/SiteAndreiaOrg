@@ -19,4 +19,27 @@
       justify-content: center;
       width: 80vw;
    }
+
+   .carousel-control-prev {
+      opacity: 1;
+
+      &:hover {
+         opacity: .8;
+      }
+   }
+
+   .carousel-control-prev {
+      opacity: 1;
+
+      &:hover {
+         opacity: .8;
+      }
+   }
+   .carousel-control-next {
+      opacity: 1;
+
+      &:hover {
+         opacity: .8;
+      }
+   }
 }
