@@ -73,7 +73,7 @@ nav li {
    text-align: center;
 
    &:not(:last-of-type) {
-      border-bottom: 1px solid $dark-blue;
+      border-bottom: 1px solid $dark-green;
    }
 
    &:hover { 
@@ -95,7 +95,7 @@ nav li {
 }
 
 nav a {
-   @include sans-serif($fs: 2.5em, $color: $dark-blue);
+   @include sans-serif($fs: 2.5em, $color: $dark-green);
    text-decoration: none;
    line-height: 0;
    padding: 8.3vh 0;

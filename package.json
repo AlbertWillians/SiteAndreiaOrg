@@ -7,12 +7,7 @@
     "preinstall": "npx npm-force-resolutions",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kevin-powell/portfolio-with-css-grid.git"
-  },
-  "author": "Kevin Powell",
-  "license": "MIT",
+  "author": "Albert Willians",
   "bugs": {
     "url": "https://github.com/kevin-powell/portfolio-with-css-grid/issues"
   },

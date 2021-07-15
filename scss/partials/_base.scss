@@ -4,10 +4,10 @@
 
 body {
    color: $dark-green;
-   font-family: $ff-a;
+   font-family: $ff-r;
    line-height: 1.6;
    background: white;
-   font-size: .875rem;
+   font-size: .95rem;
    overflow-x: hidden;
 
    @include mq{
